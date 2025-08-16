@@ -58,6 +58,28 @@ Um portfólio com tema de **Jogo de Ritmo**, criado como parte de uma atividade 
 ``` 
 ---
 
+## 🎵 Wireframes
+
+Abaixo estão os wireframes desenvolvidos para o projeto:
+
+<div align="center">
+
+|                     Tela Inicial                     |                Sobre mim                 |
+| :------------------------------------------------------: | :-------------------------------------------: |
+| ![Tela Inicial](docs/portfolio/Desktop-Inicio.png) | ![Sobre mim](docs/portfolio/Desktop-SobreMim.png) |
+
+|                  Contatos                  |                   Contatos - Aberto                    |
+| :---------------------------------------------: | :-------------------------------------------------: |
+| ![Contatos](docs/portfolio/Desktop-Contatos.png) | ![Projetos](docs/portfolio/Desktop-ContatosV2.png) |
+
+|                 Experiencia                  |            Projetos             |
+| :-------------------------------------------: | :-----------------------------------------------: |
+| ![Experiencia ](docs/portfolio/Desktop-Experiencia.png) | ![Projetos](docs/portfolio/Desktop-Projetos.png) |
+
+</div>
+
+---
+
 ## 🤝 Contribuidores
 <div style="display: flex; align-items: center; gap: 8px;">
   <img src="https://avatars.githubusercontent.com/u/170900906?v=4" alt="Foto do Contribuidor" width="50" style="border-radius: 50%;">
