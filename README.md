@@ -22,6 +22,28 @@ Um portfólio com tema de **Jogo de Ritmo**, criado como parte de uma atividade 
 
 ## 📂 Estrutura do Projeto
 
+├── docs/                     
+│   └── portfolio/             
+├── public/                    
+│   └── vite.svg                                             
+├── src/                       
+│   ├── components/            
+│   │   ├── Circle.jsx
+│   │   └── MainButton.jsx
+│   ├── pages/                
+│   │   ├── App.jsx            
+│   │   └── main.jsx          
+│   └── styles/               
+│       └── index.css          
+├── .gitignore                 
+├── .eslintrc.js               
+├── index.html                 
+├── LICENSE                    
+├── package.json              
+├── package-lock.json          
+├── README.md                  
+└── vite.config.js   
+
 ---
 
 ## 🤝 Contribuidores
