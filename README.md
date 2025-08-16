@@ -18,6 +18,18 @@ Um portfólio com tema de **Jogo de Ritmo**, criado como parte de uma atividade 
 ---
 
 ## 🛠 Tecnologias Utilizadas
+
+<div style="display: flex; align-items: center; gap: 8px;">
+  <img src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000" alt="Foto da Tecnologia" width="50" style="border-radius: 50%;">
+  <span><strong></strong></span> 
+  <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="Foto da Tecnologia" width="50" style="border-radius: 50%;">
+  <span><strong></strong></span> 
+  <img src="https://img.icons8.com/?size=100&id=D2Hi2VkJSi33&format=png&color=000000" alt="Foto da Tecnologia" width="50" style="border-radius: 50%;">
+  <span><strong></strong></span> 
+  <img src="https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000" alt="Foto da Tecnologia" width="50" style="border-radius: 50%;">
+  <span><strong></strong></span> 
+</div>
+
 ---
 
 ## 📂 Estrutura do Projeto
