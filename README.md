@@ -21,7 +21,7 @@ Um portfólio com tema de **Jogo de Ritmo**, criado como parte de uma atividade 
 ---
 
 ## 📂 Estrutura do Projeto
-
+```  bash
 ├── docs/                     
 │   └── portfolio/             
 ├── public/                    
@@ -43,7 +43,7 @@ Um portfólio com tema de **Jogo de Ritmo**, criado como parte de uma atividade 
 ├── package-lock.json          
 ├── README.md                  
 └── vite.config.js   
-
+``` 
 ---
 
 ## 🤝 Contribuidores
