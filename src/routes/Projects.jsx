@@ -1,14 +1,20 @@
 import PageType from "../components/PageType";
 import SideButton from "../components/SideButton";
-import Sidetext from "../components/SideText";
+import SideText from "../components/SideText";
+import UpperButton from "../components/UpperButton";
 
-function About() {
+function Projects() {
   return (
-    <main className="bg-black w-screen h-screen">
+    <main className="w-screen h-screen">
       <PageType />
       <section className="flex justify-between items-center h-10/12">
         <div>
-          <Sidetext />
+            <div className="flex">
+               <UpperButton />
+               <UpperButton />
+               <UpperButton />
+            </div>
+          <SideText />
         </div>
         <section>
           <SideButton />
@@ -21,4 +27,4 @@ function About() {
   );
 }
 
-export default About;
+export default Projects;
