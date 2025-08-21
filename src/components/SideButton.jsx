@@ -1,8 +1,8 @@
-function SideButton() {
+function SideButton({type}) {
     return(
-        <div className="w-96 h-12 flex justify-center mb-10">
+        <div className="w-96 h-20 flex justify-center p-4x mb-10">
             <div className="bg-[#8400F1] w-20"></div>
-            <button className="text-4xl w-full bg-[#4C008B]">Info</button>
+            <button className="text-3xl w-full bg-[#4C008B]">{type}</button>
         </div>
     )
 }

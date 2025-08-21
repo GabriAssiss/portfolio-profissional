@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function MainButton({ textDirection, func, path, format }) {
+function MainButton({ textDirection, func, path, format}) {
   let direction = "";
 
   if (textDirection === "left") {

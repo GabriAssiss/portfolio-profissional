@@ -1,0 +1,16 @@
+{
+    "ptbr": {
+        "aboutMe": {
+            "whoAmI": "Olá! Meu nome é Gabriel Assis de Souza, e sou um estudante de Engenharia de Software cursando o quarto período. Desde o início da minha jornada acadêmica, desenvolvi uma forte paixão pelas áreas de cibersegurança e Inteligência Artificial (IA). Acredito que a combinação dessas duas áreas é fundamental para moldar o futuro da tecnologia e garantir soluções robustas e inovadoras. Tenho o objetivo de aprimorar continuamente meus conhecimentos e habilidades nessas disciplinas, buscando oportunidades que me permitam aplicar a teoria na prática. Meu maior objetivo profissional é empreendedor: no futuro, pretendo fundar minha própria empresa de desenvolvimento de software, onde poderei criar soluções que unam a segurança da cibersegurança com o poder transformador da Inteligência Artificial.",
+            "hobbies": "No meu tempo livre, dedico-me a atividades que me permitem crescer tanto profissionalmente quanto pessoalmente. Gosto de desafiar minhas habilidades de programação e lógica resolvendo problemas no LeetCode, o que me ajuda a manter o raciocínio afiado para a engenharia de software. Para o bem-estar físico e mental, pratico basquete e corrida, esportes que me ensinam sobre disciplina e resistência. Além disso, a leitura é uma grande paixão, onde me aprofundo em diversos temas, desde ficção científica a livros técnicos. Adoro também colocar a mão na massa, tirando ideias do papel e criando projetos pessoais, o que me dá a oportunidade de explorar novas tecnologias e consolidar meu aprendizado.",
+            "skills": "Tecnologias as quais estou acostumado: "
+        }
+    },
+    "en": {
+        "aboutMe": {
+            "whoAmI": "Hello! My name is Gabriel Assis de Souza, and I'm a fourth-year Software Engineering student. Since the beginning of my academic journey, I've developed a strong passion for cybersecurity and Artificial Intelligence (AI). I believe that the combination of these two fields is fundamental to shaping the future of technology and ensuring robust, innovative solutions. My goal is to continuously improve my knowledge and skills in these disciplines, seeking opportunities that allow me to apply theory to practice. My biggest professional ambition is entrepreneurial: in the future, I plan to found my own software development company, where I can create solutions that unite the security of cybersecurity with the transformative power of Artificial Intelligence.",
+            "hobbies": "In my free time, I dedicate myself to activities that allow me to grow both professionally and personally. I enjoy challenging my programming and logic skills by solving problems on LeetCode, which helps me keep my software engineering mindset sharp. For my physical and mental well-being, I play basketball and run, sports that teach me about discipline and endurance. Additionally, reading is a great passion of mine, where I dive into various topics, from science fiction to technical books. I also love getting my hands dirty, bringing ideas to life by creating personal projects, which gives me the opportunity to explore new technologies and solidify my learning.",
+            "skills": "Technologies I'm familiar with: "
+        }
+    }
+}

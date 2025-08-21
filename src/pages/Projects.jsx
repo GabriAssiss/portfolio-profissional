@@ -2,21 +2,20 @@ import PageType from "../components/PageType";
 import SideButton from "../components/SideButton";
 import SideText from "../components/SideText";
 import UpperButton from "../components/UpperButton";
+import { useState } from "react";
 
 function Projects() {
+
+  const [showSideText, setShowSideText] = useState(false);
+
   return (
     <main className="w-screen h-screen">
-      <PageType />
+      <PageType type={"Projetos"}/>
       <section className="flex justify-between items-center h-10/12">
         <div>
-            <div className="flex">
-               <UpperButton />
-               <UpperButton />
-               <UpperButton />
-            </div>
-          <SideText />
+          {showSideText && <SideText />}    
         </div>
-        <section>
+        <section onMouseEnter={() => setShowSideText(true)}>
           <SideButton />
           <SideButton />
           <SideButton />
