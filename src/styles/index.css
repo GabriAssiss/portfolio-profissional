@@ -1,2 +1,11 @@
+@font-face {
+  font-family: font-game;
+  src: url("../fonts/Aldrich-Regular.ttf");
+}
+
 @import "tailwindcss";
 
+
+@theme {
+    --font-game: font-game, "sans-serif"
+}
