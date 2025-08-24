@@ -1,24 +1,14 @@
-import Circle from "../components/Circle.jsx";
-import MainButton from "../components/MainButton.jsx";
-import "../styles/index.css";
+import Section from "../components/animations/ScrollReveal";
+import TextAnimation from "../components/animations/TextAnimation";
 
-function Home() {
-
- 
-
+export default function Home() {
   return (
-    <main className="w-screen h-screen flex items-center justify-center">
-        <div className="z-50 absolute">
-          <Circle />
-        </div>
-        <nav className="grid grid-cols-2 w-5/6 gap-y-8 z-40">
-          <MainButton textDirection="left" func="Sobre mim" path="about" format="[clip-path:polygon(0%_100%,100%_100%,100%_0%,10%_0%)]" />
-          <MainButton textDirection="right" func="Projetos" path="project" format="[clip-path:polygon(0%_100%,100%_100%,90%_0%,0%_0%)]"/>
-          <MainButton textDirection="left" func="Experiências" path="experience" format="[clip-path:polygon(10%_100%,100%_100%,100%_0%,0%_0%)]"/>
-          <MainButton textDirection="right" func="Contatos" path="contact" format="[clip-path:polygon(0_0,100%_0,90%_100%,0_100%)]"/> 
-        </nav>
-    </main>
+    <div className="w-screen">
+      <Section><div className="flex flex-col"><TextAnimation text="Olá, Meu nome é Gabriel Assis de Souza!" />
+      <TextAnimation text="Sou um estudante de Engenharia de Software" /></div></Section>  
+      <Section bg="bg-gray-900">Texto 1</Section>
+      <Section bg="bg-gray-800">Texto 2</Section>
+      <Section bg="bg-gray-700">Vai te levar pro menu do Osu!</Section>
+    </div>
   );
 }
-
-export default Home;
