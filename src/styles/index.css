@@ -1,23 +1,23 @@
-@font-face {
-  font-family: font-game;
-  src: url("../fonts/Aldrich-Regular.ttf");
-}
 
 @import "tailwindcss";
 
 
-@theme {
-    --font-game: font-game, "sans-serif"
+@font-face {
+  font-family: 'font-game';
+  src: url("../fonts/Aldrich-Regular.ttf");
 }
 
-@layer utilities {
-  .scrollbar-none {
-    -ms-overflow-style: none;  
-    scrollbar-width: none;     
-  }
 
-  .scrollbar-none::-webkit-scrollbar {
-    display: none;             
-  }
+.font-game {
+    font-family: 'font-game', sans-serif;
 }
 
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}

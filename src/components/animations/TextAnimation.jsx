@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-function TextAnimation({ text, font, size }) {
+function TextAnimation({ text = " ", font, size }) {
   const letters = Array.from(text);
 
   const container = {

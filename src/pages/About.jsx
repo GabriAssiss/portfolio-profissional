@@ -1,83 +1,77 @@
-import PageType from "../components/PageType";
 import SideButton from "../components/SideButton";
 import SideText from "../components/SideText";
-import { useState } from "react";
 import data from "../data/data.json";
-import SwitchButton from "../components/SwitchButton";
+import TextAnimation from "../components/animations/TextAnimation";
 import { motion } from "motion/react";
+import { useState, useEffect } from "react";
 
-function About() {
-  const [lang, setLang] = useState("ptbr");
+import { TbBrandKotlin } from "react-icons/tb";
+import { SiJavascript, SiReact, SiTailwindcss, SiPostgresql, SiMysql, SiDocker, SiSpringboot } from "react-icons/si";
+import { FaJava, FaReact, FaGit, FaRust, FaNode } from "react-icons/fa";
+
+function About({ translate }) {
+  let [lang, setLang] = useState("ptbr");
   const [activeKey, setActiveKey] = useState(null);
   const aboutMe = data[lang].aboutMe;
 
-  const titles = {
-    ptbr: { whoAmI: "Quem sou eu?", hobbies: "Hobbies", skills: "Skills" },
-    en: { whoAmI: "Who am I?", hobbies: "Hobbies", skills: "Skills" },
-  };
+  useEffect(() => {
+    setLang(translate === "ptbr" ? "ptbr" : "en");
+  }, [translate]);
 
   return (
     <motion.main
-      className="w-full h-screen z-40 absolute"
+      className="w-full h-screen"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="flex justify-between items-center">
-        <div className="w-1/3">
-          <PageType type={lang === "ptbr" ? "Sobre mim" : "About me"} />
-        </div>
-
-        <div>
-          <SwitchButton
-            checked={lang === "ptbr"}
-            onChange={(isOn) => setLang(isOn ? "ptbr" : "en")}
-            labels={{ off: "PT", on: "EN" }}
-          />
-        </div>
-
-        <div className="text-white py-10 bg-gradient-to-r from-[#4C008B] to-[#5055F9] w-1/3 h-12 px-30 [clip-path:polygon(0%_100%,100%_100%,100%_0%,10%_0%)]" />
+      <div className="flex justify-center p-20">
+        <TextAnimation text={lang === "ptbr" ? "Sobre Mim" : "About Me"} />
       </div>
 
-      <section className="flex justify-between items-center h-10/12">
-        <motion.div >
+      <section className="flex justify-between items-center h-5/6">
+        <div>
           {activeKey && (
-            <SideText
-              title={titles[lang][activeKey]}
-              text={aboutMe?.[activeKey] ?? ""}
-            />
+            <SideText>
+              {activeKey === "skills" ? (
+                <>
+                  <p>{aboutMe[activeKey]}</p>
+                  <SiJavascript size={50} />
+                  <SiReact size={50} />
+                  <SiTailwindcss size={50} />
+                  <SiPostgresql size={50} />
+                  <SiMysql size={50} />
+                  <SiDocker size={50} />
+                  <SiSpringboot size={50} />
+                  <FaJava size={50} />
+                  <FaReact size={50} />
+                  <FaRust size={50} />
+                  <FaGit size={50} />
+                  <FaNode size={50} />
+                  <TbBrandKotlin size={50}/>
+                </>
+              ) : (
+                aboutMe[activeKey]
+              )}
+            </SideText>
           )}
-        </motion.div>
+        </div>
 
         <section className="flex flex-col gap-4">
-          <motion.div
-            initial={{ x: 100 }}
-            animate={{ x: 1 }}
-            transition={{ duration: 1 }}
-            onMouseEnter={() => setActiveKey("whoAmI")}
-          >
-            <SideButton type={titles[lang].whoAmI} />
-          </motion.div>
-          <motion.div
-            onMouseEnter={() => setActiveKey("hobbies")}
-            initial={{ x: 500 }}
-            animate={{ x: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <SideButton type={titles[lang].hobbies} />
-          </motion.div>
-          <motion.div
-            initial={{ x: 1000 }}
-            animate={{ x: 1 }}
-            transition={{ duration: 1 }}
-            onMouseEnter={() => setActiveKey("skills")}
-          >
-            <SideButton type={titles[lang].skills} />
-          </motion.div>
+          <div onMouseEnter={() => setActiveKey("whoIAm")}>
+            <SideButton type={lang === "ptbr" ? "Quem eu sou" : "Who I am"} />
+          </div>
+          <div onMouseEnter={() => setActiveKey("skills")}>
+            <SideButton type={lang === "ptbr" ? "Habilidades" : "Skills"} />
+          </div>
+          <div onMouseEnter={() => setActiveKey("hobbies")}>
+            <SideButton type="Hobbies" />
+          </div>
         </section>
       </section>
     </motion.main>
   );
 }
+
 
 export default About;
