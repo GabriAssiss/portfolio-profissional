@@ -1,4 +1,5 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+
 
 function TextAnimation({ text = " ", font, size }) {
   const letters = Array.from(text);

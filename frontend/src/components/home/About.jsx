@@ -1,7 +1,7 @@
-import SideButton from "../components/SideButton";
-import SideText from "../components/SideText";
-import data from "../data/data.json";
-import TextAnimation from "../components/animations/TextAnimation";
+import SideButton from "./SideButton";
+import SideText from "./SideText";
+import data from "../../data/data.json";
+import TextAnimation from "../animations/TextAnimation";
 import { motion } from "motion/react";
 import { useState, useEffect } from "react";
 
@@ -11,7 +11,7 @@ import { FaJava, FaReact, FaGit, FaRust, FaNode } from "react-icons/fa";
 
 function About({ translate }) {
   let [lang, setLang] = useState("ptbr");
-  const [activeKey, setActiveKey] = useState(null);
+  const [activeKey, setActiveKey] = useState("whoIAm");
   const aboutMe = data[lang].aboutMe;
 
   useEffect(() => {
@@ -31,7 +31,7 @@ function About({ translate }) {
 
       <section className="flex justify-between items-center h-5/6">
         <div>
-          {activeKey && (
+           
             <SideText>
               {activeKey === "skills" ? (
                 <>
@@ -54,7 +54,7 @@ function About({ translate }) {
                 aboutMe[activeKey]
               )}
             </SideText>
-          )}
+          
         </div>
 
         <section className="flex flex-col gap-4">

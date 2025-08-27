@@ -10,7 +10,7 @@ function Contact() {
       exit={{ opacity: 0 }}
     >
       <main className="flex justify-center items-center h-full">
-        <div className="flex w-3xl z-10 h-40 gap-x-3">
+        <div className="flex w-3xl h-40 gap-x-3">
           <a
             href="https://github.com/GabriAssiss"
             className="bg-gray-700 flex justify-center w-1/3 items-center"

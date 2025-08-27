@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "motion/react";
 import "../styles/index.css";
-import Header from "../components/Header";
+import Header from "../components/home/Header";
 
 
 function App() {

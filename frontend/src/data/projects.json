@@ -1,0 +1,68 @@
+{
+  "cards": [
+    {
+      "title": "CIT - Condomínio Inteligente",
+      "desc": "Aplicações para otimizar a gestão de condomínios, facilitando a comunicação, a transparência administrativa e a gestão de recursos.",
+      "img": "/condominio.jpeg",
+      "path": "/cit"
+    },
+    {
+      "title": "Sechat",
+      "desc": "Software de RH para otimizar processos internos, facilitando o acesso dos colaboradores a informações como gestão de férias e de processos.",
+      "img": "/rh.jpeg",
+      "path": "/sechat"
+    },
+    {
+      "title": "MicUserApplication",
+      "desc": "Aplicativo open-source que transforma seu celular em um periférico, permitindo usar a câmera e o microfone do smartphone no computador.",
+      "img": "/android.jpeg",
+      "path": "/mic-user-application"
+    }
+  ],
+  "projects": [
+    {
+      "title": "CIT - Condomínio Inteligente",
+      "desc": "Este sistema integrado foi desenvolvido para revolucionar a gestão de condomínios, promovendo uma comunicação fluida e transparente entre a administração e os moradores. Ele automatiza tarefas administrativas e financeiras que tradicionalmente consomem muito tempo, como o registro de contas a pagar e a emissão de boletos, o que garante mais eficiência e organização. Além disso, o sistema oferece funcionalidades para otimizar o gerenciamento de áreas comuns, como a reserva de salões de festa e o controle de acesso de visitantes. O objetivo principal é promover uma maior acessibilidade à informação, permitindo que os moradores acompanhem assembleias, acessem as regras do condomínio e gerenciem o recebimento de encomendas, transformando a rotina do condomínio em algo mais prático, organizado e moderno.",
+      "img": "/caminho/para/imagem_cit.",
+      "tech": [
+        "Java",
+        "JavaScript",
+        "TailwindCSS",
+        "HTML",
+        "Docker",
+        "ReactJs",
+        "Spring Boot",
+        "MySql"
+      ],
+      "link" : "https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti2-3740100-c-i-t-condominio-inteligente"
+    },
+    {
+      "title": "Sechat",
+      "desc": "O Sechat é uma solução de software completa para o setor de Recursos Humanos, criada com o objetivo de otimizar e centralizar as operações internas. Ele foi desenvolvido para atender à demanda por um sistema que integre de forma intuitiva o colaborador, os líderes de setor e o próprio RH. A plataforma facilita o acesso a informações essenciais, como a folha de pagamento e o controle de atestados médicos, reduzindo a burocracia e agilizando os processos. Além disso, o Sechat aprimora a comunicação interna da empresa, oferecendo um canal direto para solicitações de férias e feedbacks, o que contribui para um ambiente de trabalho mais eficiente e conectado.",
+      "img": "/caminho/para/imagem_sechat.png",
+      "tech": [
+        "Java",
+        "TypeScript",
+        "SCSS",
+        "HTML",
+        "Python",
+        "Docker",
+        "Angular",
+        "Spring Boot",
+        "Azure Cloud"
+      ],
+      "link" : "https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-1-ti3-9577100-sechat-solutions"
+    },
+    {
+      "title": "MicUserApplication",
+      "desc": "O MicUserApplication é um projeto open-source inovador, ideal para streamers, criadores de conteúdo e profissionais que necessitam de periféricos de alta qualidade sem o custo de equipamentos dedicados. A aplicação transforma seu celular em um dispositivo de entrada virtual, permitindo que você use a câmera e o microfone do smartphone diretamente no seu computador. Essa solução elimina a necessidade de comprar hardware adicional, oferecendo uma alternativa econômica e eficiente para videochamadas, gravações e transmissões ao vivo. Com uma interface simples, o aplicativo conecta-se de forma rápida e estável, proporcionando uma experiência de uso fluida e de alta qualidade.",
+      "img": "/caminho/para/imagem_mic.png",
+      "tech": [
+        "Java",
+        "Kotlin",
+        "Android Studio"
+      ],
+      "link" : "https://github.com/GabriAssiss/MicUserApplication"
+    }
+  ]
+}
