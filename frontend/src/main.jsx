@@ -7,11 +7,13 @@ import Home from "./pages/Home.jsx";
 import Projects from "./routes/AppProjects.jsx";
 import Project from "./pages/Project.jsx";
 import dataProjects from "./data/projects.json";
+import Error from "./pages/Error.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
     children: [
       {
         index: true,

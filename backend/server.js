@@ -1,13 +1,15 @@
 import express from "express";
 import nodemailer from "nodemailer";
 import cors from "cors";
-import dotenv from "dotenv";
+import dotenv from "dotenv/lib/main";
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+const port = process.env.PORT || 3001;
 
 app.post("/send-email", async (req, res) => {
   const { name, email, message } = req.body;
@@ -40,6 +42,6 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log("Servidor rodando na porta 5000");
 });
