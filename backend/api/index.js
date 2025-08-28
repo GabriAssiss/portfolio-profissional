@@ -1,10 +1,15 @@
 import express from "express";
 import nodemailer from "nodemailer";
 import cors from "cors";
+import dotenv from "dotenv/lib/main";
+
+dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+const port = process.env.PORT || 3001;
 
 app.post("/send-email", async (req, res) => {
   const { name, email, message } = req.body;
@@ -28,11 +33,17 @@ app.post("/send-email", async (req, res) => {
 
     await transporter.sendMail(mailOptions);
 
-    res.status(200).json({ success: true, message: "Email enviado com sucesso!" });
+    res
+      .status(200)
+      .json({ success: true, message: "Email enviado com sucesso!" });
   } catch (error) {
     console.error(error);
     res.status(500).json({ success: false, message: "Erro ao enviar email." });
   }
 });
 
-export default app;
+app.listen(port, () => {
+  console.log("Servidor rodando na porta 5000");
+});
+
+module.exports = app
