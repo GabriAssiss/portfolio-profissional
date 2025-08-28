@@ -6,12 +6,12 @@ O objetivo é desenvolver um website de portfólio profissional, que apresente s
 ---
 
 ## 📖 Sobre
-Um portfólio com tema de **Jogo de Ritmo**, criado como parte de uma atividade da disciplina **Laboratório de Desenvolvimento de Software**.
+A ideia original era que o portfólio possuisse tema de **Jogo de Ritmo** (Osu), porém a ideia foi descontinuada, as imagens do projeto original podem ser encontradas na seção Wireframes e na pasta docs/ do projeto. O portfólio foi criado como parte de uma atividade da disciplina **Laboratório de Desenvolvimento de Software**.
 
 ---
 
 ## 🌌 Funcionalidades
-- Apresentação profissional com design temático musical  
+- Apresentação profissional  
 - Seções para trajetória, habilidades, projetos e contato  
 - Layout moderno e responsivo  
 
@@ -28,33 +28,49 @@ Um portfólio com tema de **Jogo de Ritmo**, criado como parte de uma atividade 
   <span><strong></strong></span> 
   <img src="https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000" alt="Foto da Tecnologia" width="50" style="border-radius: 50%;">
   <span><strong></strong></span> 
+  <img src="https://img.icons8.com/?size=100&id=54087&format=png&color=000000" alt="Foto da Tecnologia" width="50" style="border-radius: 50%;">
+  <span><strong></strong></span> 
 </div>
 
 ---
 
 ## 📂 Estrutura do Projeto
 ```  bash
-├── docs/                     
-│   └── portfolio/             
-├── public/                    
-│   └── vite.svg                                             
-├── src/                       
-│   ├── components/            
-│   │   ├── Circle.jsx
-│   │   └── MainButton.jsx
-│   ├── pages/                
-│   │   ├── App.jsx            
-│   │   └── main.jsx          
-│   └── styles/               
-│       └── index.css          
-├── .gitignore                 
-├── .eslintrc.js               
-├── index.html                 
-├── LICENSE                    
-├── package.json              
-├── package-lock.json          
-├── README.md                  
-└── vite.config.js   
+PORTFOLIO-PROFISSIONAL
+├── .vite/
+│
+├── backend
+│   ├── src/
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── server.js
+│   └── .env
+│
+├── docs
+│   └── portfolio/
+│
+├── frontend
+│   ├── public/
+│   │
+│   ├── src
+│   │   ├── components/
+│   │   ├── data/
+│   │   ├── fonts/
+│   │   ├── pages/
+│   │   ├── routes/
+│   │   ├── styles/
+│   │   └── main.jsx
+│   │
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── vite.config.js
+│ 
+├── .gitignore
+├── LICENSE
+└── README.md
+
 ``` 
 ---
 
