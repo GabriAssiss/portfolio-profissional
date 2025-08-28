@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 function ProjectCard({ title, desc, img, path }) {
   return (
-    <div className="bg-white/10 border border-white/30 rounded-2xl p-4 w-96 text-white  h-full z-10">
-      <div className="h-40 bg-gray-700 rounded-lg flex items-center justify-center">
+    <div className="bg-white/10 border border-white/30 rounded-2xl p-4 xl:w-96 x-60 text-white  z-10">
+      <div className="xl:h-40 h-20 bg-gray-700 rounded-lg flex items-center justify-center">
         <img
           src={img}
           clas
