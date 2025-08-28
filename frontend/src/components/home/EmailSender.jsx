@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-const baseUrl = "https://portfolio-profissional-isfp.vercel.app/"
- 
+const baseUrl = "https://portfolio-profissional-isfp.vercel.app/send-email"
+
 function EmailSender({ translate }) {
   const [formData, setFormData] = useState({
     name: "",
