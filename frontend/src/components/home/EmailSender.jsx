@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+const baseUrl = "https://portfolio-profissional-isfp.vercel.app/"
+ 
 function EmailSender({ translate }) {
   const [formData, setFormData] = useState({
     name: "",
@@ -17,7 +19,7 @@ function EmailSender({ translate }) {
     setStatus("Enviando...");
 
     try {
-      const res = await fetch("http://localhost:5000/send-email", {
+      const res = await fetch(baseUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
