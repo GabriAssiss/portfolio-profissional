@@ -1,4 +1,4 @@
-# 🚀 Portfólio Profissional – Tema Jogo de Ritmo
+# 🚀 Portfólio Profissional
 
 ## 📝 Enunciado
 O objetivo é desenvolver um website de portfólio profissional, que apresente sua trajetória, habilidades, projetos e formas de contato de maneira moderna e acessível.
