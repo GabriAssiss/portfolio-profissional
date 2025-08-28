@@ -6,7 +6,7 @@ O objetivo é desenvolver um website de portfólio profissional, que apresente s
 ---
 
 ## 📖 Sobre
-A ideia original era que o portfólio possuisse tema de **Jogo de Ritmo** (Osu), porém a ideia foi descontinuada, as imagens do projeto original podem ser encontradas na seção Wireframes e na pasta docs/ do projeto. O portfólio foi criado como parte de uma atividade da disciplina **Laboratório de Desenvolvimento de Software**.
+A ideia original era que o portfólio possuísse tema de **Jogo de Ritmo** (Osu), porém a ideia foi descontinuada, as imagens do projeto original podem ser encontradas na seção Wireframes e na pasta docs/ do projeto. O portfólio foi criado como parte de uma atividade da disciplina **Laboratório de Desenvolvimento de Software**.
 
 ---
 
