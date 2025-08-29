@@ -75,24 +75,22 @@ function Home() {
         </div>
       </Section>
 
-      <Section id="contact">
-        <div
-          className="w-full h-full flex flex-col justify-center items-center pt-100"
-          style={{
-            backgroundImage: `url(${bgImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          
-          <h2 className="text-4xl mb-10">
-            {lang === "ptbr" ? "Contatos" : "Contacts"}
-          </h2>
-          
-          <Contact />
-          <EmailSender translate={lang} />
-        </div>
-      </Section>
+      <div
+        id="contact"
+        className="w-full h-full flex flex-col justify-center items-center pt-60 text-white"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <h2 className="text-4xl mb-10">
+          {lang === 'ptbr' ? 'Contatos' : 'Contacts'}
+        </h2>
+
+        <Contact />
+        <EmailSender translate={lang} />
+      </div>
     </main>
   );
 }
