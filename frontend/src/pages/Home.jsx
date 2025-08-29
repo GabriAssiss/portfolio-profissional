@@ -61,7 +61,7 @@ function Home() {
           <p className="text-2xl w-1/2 text-center">
             {aboutMe["projectsIntroduction"]}
           </p>
-          <div className="flex 2xl:gap-20 gap-5 z-0 xl:gap-10 ">
+          <div className="flex md:w-min w-full 2xl:gap-20 gap-5 z-0 xl:gap-10 overflow-y-auto">
             {dataProjects?.cards?.map((card, index) => (
               <ProjectCard
                 key={index}
