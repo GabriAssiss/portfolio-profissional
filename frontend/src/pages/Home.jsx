@@ -49,19 +49,19 @@ function Home() {
           <h2 className="mb-20 text-4xl">
             {lang === "ptbr" ? "Experiência" : "Experience"}
           </h2>
-          <p className="xl:text-2xl lg:text-xl md:text-[16px] sm:text-[14px] text- w-1/2 text-center">{aboutMe.experience}</p>
+          <p className="xl:text-2xl lg:text-xl md:text-[16px] sm:text-[14px] text-[12px] w-1/2 text-center">{aboutMe.experience}</p>
         </div>
       </Section>
    
       <Section id="projects">
-        <div className="flex flex-col items-center gap-y-20 h-screen">
+        <div className="flex flex-col items-center gap-y-20 h-auto w-screen">
           <h2 className="text-4xl">
             {lang === "ptbr" ? "Projetos" : "Projects"}
           </h2>
           <p className="text-2xl w-1/2 text-center">
             {aboutMe["projectsIntroduction"]}
           </p>
-          <div className="flex 2xl:gap-20 z-0 xl:gap-10 ">
+          <div className="flex 2xl:gap-20 gap-5 z-0 xl:gap-10 ">
             {dataProjects?.cards?.map((card, index) => (
               <ProjectCard
                 key={index}
@@ -77,16 +77,18 @@ function Home() {
 
       <Section id="contact">
         <div
-          className="w-full h-full flex flex-col justify-center items-center"
+          className="w-full h-full flex flex-col justify-center items-center pt-100"
           style={{
             backgroundImage: `url(${bgImage})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
+          
           <h2 className="text-4xl mb-10">
             {lang === "ptbr" ? "Contatos" : "Contacts"}
           </h2>
+          
           <Contact />
           <EmailSender translate={lang} />
         </div>

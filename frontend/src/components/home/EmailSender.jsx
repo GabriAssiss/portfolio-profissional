@@ -40,7 +40,7 @@ function EmailSender({ translate }) {
   };
 
   return (
-    <section className="w-auto h-full m-20 text-white">
+    <section className="2xl:w-auto w-screen h-full m-20 text-white">
       <h1 className="flex justify-center text-2xl">
         {translate === "ptbr" ? "Me envie uma mensagem!" : "Send me a message!"}
       </h1>

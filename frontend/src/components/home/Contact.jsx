@@ -3,14 +3,11 @@ import { motion } from "motion/react";
 
 function Contact() {
   return (
-    <motion.div
+    <div
       className="h-full"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
     >
       <main className="flex justify-center items-center h-full">
-        <div className="flex w-3xl h-40 gap-x-3">
+        <div className="flex xl:w-3xl w-screen h-40 gap-x-3">
           <a
             href="https://github.com/GabriAssiss"
             className="bg-gray-700 flex justify-center w-1/3 items-center"
@@ -35,7 +32,7 @@ function Contact() {
           </a>
         </div>
       </main>
-    </motion.div>
+    </div>
   );
 }
 

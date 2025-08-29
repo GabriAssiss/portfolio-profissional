@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <nav className="fixed w-full h-24 items-center justify-between bg-[#4C008B] flex z-10 text-white font-game">
+    <nav className="fixed w-screen h-24 items-center justify-between bg-[#4C008B] flex z-10 text-white font-game">
       <p className="pl-10 text-3xl cursor-pointer" onClick={() => scrollToSection('home')}>
         Gabriel
       </p>
