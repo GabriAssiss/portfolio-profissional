@@ -3,7 +3,9 @@ import nodemailer from "nodemailer";
 import cors from "cors";
 import dotenv from "dotenv/lib/main";
 
-dotenv.config();
+if (process.env.NODE_ENV !== "production") {
+  dotenv.config();
+}
 
 const app = express();
 app.use(cors());
