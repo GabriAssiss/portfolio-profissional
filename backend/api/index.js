@@ -1,7 +1,7 @@
 import express from "express";
 import nodemailer from "nodemailer";
 import cors from "cors";
-import dotenv from "dotenv/lib/main";
+import dotenv from "dotenv";
 
 if (process.env.NODE_ENV !== "production") {
   dotenv.config();
