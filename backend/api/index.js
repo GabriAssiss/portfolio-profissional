@@ -48,4 +48,4 @@ app.listen(port, () => {
   console.log("Servidor rodando na porta 5000");
 });
 
-module.exports = app
+export default app
